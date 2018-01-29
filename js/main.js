@@ -11,11 +11,10 @@ document.getElementById('calcBtn').addEventListener('click', function (){
    var taxValue = document.getElementById('tax').value;
 
    if (isDataEmpty(name, taxValue, netValue, grossValue)) {
-       alert("Provided data is not correct, you must provide at least name tax and net or gross value");
+       alert("Provided data is not correct, you must provide at least name, tax and net or gross value");
        return false;
    }
-
-
+    
    if (netValue) {
        document.getElementById('gross').value = (netValue + parseFloat(netValue * parseFloat(taxValue / 100))).toPrecision(4);
    }
