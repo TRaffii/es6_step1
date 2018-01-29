@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Salary calculator</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+    <section id="salary-calc-section">
+    <h1>Salary calculator</h1>
+        <div class="salary-form">
+            <div class="form-line">
+                <label>Name:</label>
+                <input type="text" id="name" placeholder="Your name"/>
+            </div>
+            <div class="form-line">
+                <label htmlFor="tax">Tax:</label>
+                <select id="tax">
+                    <option value="18">18%</option>
+                    <option value="19">19%</option>
+                    <option value="23">23%</option>
+                    <option value="32">32%</option>
+                </select>
+            </div>
+            <div class="form-line">
+                <label htmlFor="net">Net:</label>
+                <input type="text" id="net" value="0"/>
+            </div>
+            <div class="form-line">
+                <label htmlFor="gross">Gross:</label>
+                <input type="text" id="gross" value="0"/>
+            </div>
+            <div class="form-line">
+                <label htmlFor="calcBtn"></label>
+                <button id="calcBtn">Calculate</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
 </body>
 </html>
